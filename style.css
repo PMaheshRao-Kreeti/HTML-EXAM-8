@@ -119,7 +119,7 @@ body{
 }
 
 .banner {
-  background-image: url('/assets/banner.jpg');
+  background-image: url('./assets/banner.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 5rem;
@@ -178,12 +178,24 @@ body{
   display: none;
 }
 
+.banner-2{
+  position: relative;
+}
+.banner-2__offer-text{
+  color: white;
+  font-size: 3rem;
+  font-weight: 900;
+  position: absolute;
+/* background-color: #eb3740; */
+  width: 60%;
+  right: 0;
+  bottom: 10px;
+}
 
-.section-cart__hedaing{
+.section-cart__heading{
   color: white;
   background-color: black;
   padding: .5rem 1rem;
-  font-size: 1rem;
 }
 
 .section-cart__icons i{
@@ -243,10 +255,19 @@ body{
   margin: 0;
 }
 
-.social-aside-description p{
-
+.right-bg-grey{
+  background: var(--side-nav-bg);
 }
 
+.testimonial-profile img {
+  scale: .7;
+}
+
+.side-banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /* header */
 
@@ -328,7 +349,7 @@ body{
 
 @media (max-width: 768px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
   .recommendation-card {
     flex-wrap: wrap;
@@ -341,6 +362,10 @@ body{
   }
   .section-cart figure img{
      scale: .8;
+  }
+
+  .banner-2__offer-text{
+    font-size: 3rem;
   }
 }
 @media (max-width: 568px) {
@@ -455,8 +480,4 @@ footer a:hover{
 
 /* Styles for mobile devices */
 
-@media (max-width: 767px) {
-  html{
-    font-size: 10px;
-  }
-}
+
