@@ -13,17 +13,647 @@
   <title> Hello World</title>
 </head>
 
-<body>
+<body class="d-flex flex-column min-vh-100">
 
-  <header class="header">
+  <header class="header ">
+    <section class="bg-red">
+        <ul class="header__sub-menus__items container ">
+          <li class="header__sub-menus__item-list--pl0">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle header__dropdown-btn pe-5 horizontal-seperator" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                English
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item text-dark" href="#">Hindi</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Punjabi</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Something else</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__sub-menus__item-list me-auto">
+            <div class="dropdown">
+              <button class="btn dropdown-toggle header__dropdown-btn" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                $ USD
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item text-dark" href="#">INR</a></li>
+                <li><a class="dropdown-item text-dark" href="#"> CH</a></li>
+                <li><a class="dropdown-item text-dark" href="#">Something else</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="header__sub-menus__item-list d-none d-md-inline  ">
+            <a href="#" class=" pe-2 horizontal-seperator"><i class="fas fa-user me-2"></i>My accout</a>
+          </li>
+          <li class="header__sub-menus__item-list d-none d-md-inline ">
+            <a href="#" class=" pe-2 horizontal-seperator "><i class="fas fa-map-pin me-2"></i>Wishlist</a>
+          </li>
+          <li class="header__sub-menus__item-list d-none d-md-inline ">
+            <a href="#" class=" pe-2 horizontal-seperator "><i class="far fa-check-square me-2"></i>checkout</a>
+          </li>
+          <li class="header__sub-menus__item-list">
+            <a href="#"><i class="fas fa-lock me-2"></i>Login</a>
+          </li>
+        </ul>
+      
+    </section>
 
+    <section class="header__search container py-4 ">
+      <div class="row">
+        <div class="col-lg-3 col-md-3 p-2">
+          <a class="navbar-brand" href="#">
+            <img src="/assets/logo11.png" alt="emarket" height="40" class="d-inline-block align-text-top" />
+          </a>
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <form class="d-flex my-2 mx-auto  ">
+            <select class="form-select  header__search-dropdown " aria-label="Default select example">
+              <option selected>ALL category</option>
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+            <input class="form-control   header__search-area" type="search" placeholder="Search"
+              aria-label="Search" />
+            <button class="btn btn-md header__search-btn" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </form>
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 p-2">
+          <div class=" d-flex justify-content-end  align-content-center  ">
+            <div class="header__search__sub-nav-icon">
+              <a href="#"><i class="fas fa-cart-plus"></i></a>
+            </div>
+              <strong class="fs-5 ps-3">My Cart</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <nav class="navbar navbar-expand-md navbar-dark navbar-bg-dark">
+      <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle me-3" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Home
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle me-3" href="#" id="navbarDropdown2" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Page
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle me-3" href="#" id="navbarDropdown3" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Blog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle me-3" href="#" id="navbarDropdown4" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Shop
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle me-3" href="#" id="navbarDropdown5" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Collections
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link">Specials!</a>
+            </li>
+          </ul>
+          <ul class="list-unstyled d-flex mt-2 navbar-socials">
+            <li class="me-2"><a href="#" class="text-decoration-none "><i class="fab fa-facebook"></i></a></li>
+            <li class="mx-2"><a href="#" class="text-decoration-none "><i class="fab fa-twitter"></i></a></li>
+            <li class="mx-2"><a href="#" class="text-decoration-none "><i class="fab fa-pinterest"></i></a>
+            </li>
+            <li class="mx-2"><a href="#" class="text-decoration-none "><i class="fab fa-youtube"></i></a></li>
+            <li class="mx-2"><a href="#" class="text-decoration-none "><i class="fab fa-pinterest"></i></a>
+            </li>
+            <li class="mx-2"><a href="#" class="text-decoration-none "><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   </header>
-  <main class="main">
 
+
+  <main class="main container my-3">
+    <section class="row">
+      <aside class="col-lg-3 left-side-content mt-3 d-none d-lg-block ">
+        <section class="row mt-3">
+          <div class="col-12 category">
+            <h4 class="category-heading m-0">CATEGORY</h4>
+            <ul class="p-0">
+              <li>Category 1</li>
+              <li>Category 2</li>
+              <li>Category 3</li>
+              <li>Category 4</li>
+              <li>Category 5</li>
+            </ul>
+          </div>
+
+          <div class="col-12 new-seller my-3">
+            <h4 class="category-heading m-0">NEW SELLER</h4>
+            <div class="row mt-3">
+              <div class="col-12  d-flex gap-3">
+                <img src="/assets/pic1.png" alt="mixer">
+                <div class="description">
+                  <h6 class="heading">Lorem, ipsum. </h6>
+                  <div class="star-container d-flex mb-2">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star me-auto"></i>
+                  </div>
+                  <strong class="item-price ">78$</strong>
+                </div>
+              </div>
+              <div class="col-12  d-flex gap-3">
+                <img src="/assets/pic1.png" alt="mixer">
+                <div class="description">
+                  <h6 class="heading">Lorem, ipsum. </h6>
+                  <div class="star-container d-flex mb-2">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star me-auto"></i>
+                  </div>
+                  <strong class="item-price ">78$</strong>
+                </div>
+              </div>
+              <div class="col-12  d-flex gap-3">
+                <img src="/assets/pic1.png" alt="mixer">
+                <div class="description">
+                  <h6 class="heading">Lorem, ipsum. </h6>
+                  <div class="star-container d-flex mb-2">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star me-auto"></i>
+                  </div>
+                  <strong class="item-price ">78$</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 new-seller my-3 ">
+            <h4 class="category-heading m-0">About US</h4>
+            <p class="p-2 about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nobis possimus, architecto rerum eius ab harum, asperiores reprehenderit delectus nostrum saepe dolores, ducimus earum quod ipsam dicta magnam et nulla.</p>
+          </div>
+
+          <div class="col-12 new-seller my-3">
+            <h4 class="category-heading m-0">BEST SELLER</h4>
+            <div class="row mt-3">
+              <div class="col-12  d-flex gap-3">
+                <img src="/assets/pic4.png" alt="dress">
+                <div class="description">
+                  <h6 class="heading">Lorem, ipsum. </h6>
+                  <div class="star-container d-flex mb-2">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star me-auto"></i>
+                  </div>
+                  <strong class="item-price ">78$</strong>
+                </div>
+              </div>
+              <div class="col-12  d-flex gap-3">
+                <img src="/assets/pic4.png" alt="dress">
+                <div class="description">
+                  <h6 class="heading">Lorem, ipsum. </h6>
+                  <div class="star-container d-flex mb-2">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star me-auto"></i>
+                  </div>
+                  <strong class="item-price ">78$</strong>
+                </div>
+              </div>
+              <div class="col-12  d-flex gap-3">
+                <img src="/assets/pic4.png" alt="dress">
+                <div class="description">
+                  <h6 class="heading">Lorem, ipsum. </h6>
+                  <div class="star-container d-flex mb-2">
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star "></i>
+                    <i class="fas fa-star me-auto"></i>
+                  </div>
+                  <strong class="item-price ">78$</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <section class="col-lg-6 center-content">
+        <div class="row">
+          <section class="col-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                  aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                  aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                  aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="banner">
+                    <section class="banner-box">
+                      <span class="fs-1">Look Upto</span>
+                      <h2 class="banner-box__heading">Sales fosion upt 60%</h2>
+                      <p class="banner-box__description"> the key have Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit,
+                        nam.</p>
+                      <button class="banner-box__button">shop now</button>
+                    </section>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="banner">
+                    <section class="banner-box">
+                      <span class="fs-1">Look Upto</span>
+                      <h2 class="banner-box__heading">Sales fosion upt 60%</h2>
+                      <p class="banner-box__description"> the key have Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit,
+                        nam.</p>
+                      <button class="banner-box__button">shop now</button>
+                    </section>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="banner">
+                    <section class="banner-box">
+                      <span class="fs-1">Look Upto</span>
+                      <h2 class="banner-box__heading">Sales fosion upt 60%</h2>
+                      <p class="banner-box__description"> the key have Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Velit,
+                        nam.</p>
+                      <button class="banner-box__button">shop now</button>
+                    </section>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="col-12 mb-3">
+            <div class="row pt-3">
+              <div class="col-sm-6">
+                <img src="/assets/banner3.jpg" alt="banner 2 ad" class="w-100 pt-1">
+              </div>
+              <div class="col-sm-6 d-flex justify-content-end  ">
+                <img src="/assets/banner2.jpg" alt="banner 3 ad" class="w-100 pt-1">
+              </div>
+            </div>
+          </section>
+
+          <section class="section-cart col-12 my-3 ">
+            <div class="row my-2">
+              <div class="col-4"> <h2 class="section-cart__hedaing me-auto">Whats New</h2> </div>
+              <div class="col-8 section-cart__icons d-flex justify-content-end align-content-end "> <i class="far fa-arrow-alt-circle-left "></i> <i class="far fa-arrow-alt-circle-right"></i></div>
+            </div>
+
+            <div class="row my-2">
+              <figure class="col-lg-4 col-md-4 col-sm-6 section-cart-card d-flex flex-column justify-content-center ">
+                <img src="assets/pic2.png" alt="cart item dress" class="img-fluid ">
+                <figcaption class="text-center pt-3">
+                  <h5 class="section-cart__item-name"> Mapicola incididuv</h5>
+                  <strong class="section-cart__item-price">$55.30</strong>
+                </figcaption>
+              </figure>
+              <figure class="col-lg-4 col-md-4 col-sm-6 section-cart-card d-flex flex-column justify-content-end ">
+                <img src="assets/pic3.png" alt="cart item purse" class="img-fluid ">
+                <figcaption class="text-center pt-3">
+                  <h5 class="section-cart__item-name"> Mapicola incididuv</h5>
+                  <strong class="section-cart__item-price">$55.30</strong>
+                </figcaption>
+              </figure>
+              <figure class="col-lg-4 col-md-4 col-sm-6 section-cart-card d-flex flex-column justify-content-center d-none d-md-inline-flex ">
+                <img src="assets/pic2.png" alt="cart item dress" class="img-fluid ">
+                <figcaption class="text-center pt-3">
+                  <h5 class="section-cart__item-name"> Mapicola incididuv</h5>
+                  <strong class="section-cart__item-price">$55.30</strong>
+                </figcaption>
+              </figure>
+              <figure class="col-lg-4 col-md-4 col-sm-6 section-cart-card d-flex flex-column justify-content-end d-none d-md-inline-flex">
+                <img src="assets/pic3.png" alt="cart item purse" class="img-fluid ">
+                <figcaption class="text-center pt-3">
+                  <h5 class="section-cart__item-name"> Mapicola incididuv</h5>
+                  <strong class="section-cart__item-price">$55.30</strong>
+                </figcaption>
+              </figure>
+              <figure class="col-lg-4 col-md-4 col-sm-6 section-cart-card d-flex flex-column justify-content-center d-none d-md-inline-flex">
+                <img src="assets/pic2.png" alt="cart item dress" class="img-fluid ">
+                <figcaption class="text-center pt-3">
+                  <h5 class="section-cart__item-name"> Mapicola incididuv</h5>
+                  <strong class="section-cart__item-price">$55.30</strong>
+                </figcaption>
+              </figure>
+              <figure class="col-lg-4 col-md-4 col-sm-6 section-cart-card d-flex flex-column justify-content-end d-none d-md-inline-flex">
+                <img src="assets/pic3.png" alt="cart item purse" class="img-fluid ">
+                <figcaption class="text-center pt-3">
+                  <h5 class="section-cart__item-name"> Mapicola incididuv</h5>
+                  <strong class="section-cart__item-price">$55.30</strong>
+                </figcaption>
+              </figure>
+            </div>
+          </section>
+
+          <section class="col-12 popular-search p-3">
+            <strong> Popular Search : </strong> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque repellendus sapiente mollitia distinctio quas amet eveniet minus laudantium rem magni!
+          </section>
+
+        </div>
+      </section>
+      <article class="col-lg-3 right-side-content my-3">
+        <div class="row my-3">
+          <div class="col-12">
+            <ul>
+              <li class="d-flex gap-2 justify-content-start align-item-center pt-2 m-1">
+                <i class="fas fa-truck"></i>
+                <div class="social-aside-description">
+                  <h3>FREE DELIVERY</h3>
+                  <p>From 99$ only</p>
+                </div>
+              </li>
+              <li class="d-flex gap-2 justify-content-start align-item-center pt-2 m-1">
+                <i class="fas fa-truck"></i>
+                <div class="social-aside-description">
+                  <h3>FREE DELIVERY</h3>
+                  <p>From 99$ only</p>
+                </div>
+              </li>
+              <li class="d-flex gap-2 justify-content-start align-item-center pt-2 m-1">
+                <i class="fas fa-truck"></i>
+                <div class="social-aside-description">
+                  <h3>FREE DELIVERY</h3>
+                  <p>From 99$ only</p>
+                </div>
+              </li>
+              <li class="d-flex gap-2 justify-content-start align-item-center pt-2 m-1">
+                <i class="fas fa-truck"></i>
+                <div class="social-aside-description">
+                  <h3>FREE DELIVERY</h3>
+                  <p>From 99$ only</p>
+                </div>
+              </li>
+            </ul>
+
+
+            <div class="col-12 new-seller my-3 ">
+              <h4 class="category-heading m-0">Testimonial</h4>
+              <p class="p-2 about-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo nobis    possimus,
+              architecto rerum eius ab harum, asperiores reprehenderit delectus nostrum saepe dolores, ducimus earum quod ipsam
+              dicta magnam et nulla.</p>
+              
+              <div class="row mt-0">
+                <img src="/assets/Blog_1.jpg" alt="">
+              </div>
+            </div>
+
+            <div class="col-12 new-seller my-3">
+              <h4 class="category-heading m-0">BEST SELLER</h4>
+              <div class="row mt-3">
+                <div class="col-12  d-flex gap-3">
+                  <img src="/assets/pic4.png" alt="dress">
+                  <div class="description">
+                    <h6 class="heading">Lorem, ipsum. </h6>
+                    <div class="star-container d-flex mb-2">
+                      <i class="fas fa-star "></i>
+                      <i class="fas fa-star "></i>
+                      <i class="fas fa-star "></i>
+                      <i class="fas fa-star "></i>
+                      <i class="fas fa-star me-auto"></i>
+                    </div>
+                    <strong class="item-price ">78$</strong>
+                  </div>
+                </div>
+                <div class="col-12  d-flex gap-3">
+                  <img src="/assets/pic4.png" alt="dress">
+                  <div class="description">
+                    <h6 class="heading">Lorem, ipsum. </h6>
+                    <div class="star-container d-flex mb-2">
+                      <i class="fas fa-star "></i>
+                      <i class="fas fa-star "></i>
+                      <i class="fas fa-star "></i>
+                      <i class="fas fa-star "></i>
+                      <i class="fas fa-star me-auto"></i>
+                    </div>
+                    <strong class="item-price ">78$</strong>
+                  </div>
+                </div>
+                <div class="col-12  d-flex gap-3">
+                  <img src="/assets/pic4.png" alt="dress">
+                  <div class="description">
+                    <h6 class="heading">Lorem, ipsum. </h6>
+                    <div class="star-container d-flex mb-2">
+                      <i class="fas fa-star "></i>
+                      <i class="fas fa-star "></i>
+                      <i class="fas fa-star "></i>
+                      <i class="fas fa-star "></i>
+                      <i class="fas fa-star me-auto"></i>
+                    </div>
+                    <strong class="item-price ">78$</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+              
+
+          </div>
+      </article>
+    </section>
+
+ 
   </main>
-  <footer class="footer">
-    
+  <section class="recommend-container">
+    <div class="recommendation ">
+      <div class="heading">
+        <div class="heading-tag">recommendation for you</div>
+        <div class="recommendation-link">
+          <ul>
+            <li><a href="#">All Product</a></li>
+            <li><a href="#">Bags</a></li>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Men's clothing</a></li>
+            <li><a href="#">Shoes</a></li>
+            <li><a href="#">Watches</a></li>
+          </ul>
+        </div>
+      </div>
+  
+      <div class="recommendation-card">
+        <div class="card-box">
+          <img src="./assets/pic2.png" alt="recommendation image">
+          <h3>Mapicola incididuv</h3>
+          <span>$58.00</span>
+        </div>
+        <div class="card-box">
+          <img src="./assets/pic2.png" alt="recommendation image 2">
+          <h3>Mapicola incididuv</h3>
+          <span>$58.00</span>
+        </div>
+        <div class="card-box">
+          <img src="./assets/pic2.png" alt="recommendation image 3">
+          <h3>Mapicola incididuv</h3>
+          <span>$58.00</span>
+        </div>
+        <div class="card-box">
+          <img src="./assets/pic2.png" alt="recommendation image 4">
+          <h3>Mapicola incididuv</h3>
+          <span>$58.00</span>
+        </div>
+        <div class="card-box">
+          <img src="./assets/pic2.png" alt="recommendation image 5">
+          <h3>Mapicola incididuv</h3>
+          <span>$58.00</span>
+        </div>
+        <div class="card-box">
+          <img src="./assets/pic2.png" alt="recommendation image 6">
+          <h3>Mapicola incididuv</h3>
+          <span>$58.00</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <footer class="mt-auto">
+    <section>
+      <section class="upper-footer">
+        <div class="upper-footer-content">
+          <div class="upper-footer-icon"><i class="fas fa-rocket"></i></div>
+          <div>
+            <h5>The Most Advanced Footer</h5>
+            <span>Create Unlimited Rows And Columns</span>
+          </div>
+        </div>
+        <div class="upper-footer-content">
+          <div class="upper-footer-icon"><i class="fas fa-rocket"></i></div>
+          <div>
+            <h5>100% Fluid Responsive</h5>
+            <span>Fit On Any Device From End To End</span>
+          </div>
+        </div>
+        <div class="upper-footer-content">
+          <div class="upper-footer-icon"><i class="fas fa-rocket"></i></div>
+          <div>
+            <h5>25+ Killer Modules Included</h5>
+            <span>Unmatched Module Lineup</span>
+          </div>
+        </div>
+      </section>
+      <section class="lower-footer">
+        <div class="w-50">
+          <img src="assets/logo11.png" alt="logo">
+          <ul class="d-flex flex-column gap-2 mt-4">
+            <li>
+              <i class="fa-solid fa-map-location-dot"></i>
+              <a href="#">San Luis Potosi, Centro Historico, 78000 San Luis Potosi,SPL,Mexico</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-headset"></i>
+              <a href="tel:+02140215">(+0214)0 315 215-(+0214)0 315 215</a>
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:Contact@Opencartworks.Com">Contact@Opencartworks.Com</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-stopwatch"></i>
+              Open TimeL 8:00AM-6:00PM
+            </li>
+          </ul>
+        </div>
+        <div class="w-25">
+          <h5>MY ACCOOUNT</h5>
+          <ul class="d-flex flex-column gap-2 mt-4 pt-3">
+            <li><a href="#">Brands</a></li>
+            <li><a href="#">Gift Certifications</a></li>
+            <li><a href="#">Affilates</a></li>
+            <li><a href="#">Specials</a></li>
+            <li><a href="#">Custom Link</a></li>
+          </ul>
+        </div>
+        <div class="d-flex flex-column gap-4  w-25">
+          <h5>NEWSLETTER</h5>
+          <span>Subscribe now to get 100 exclusive photot & two newsletter per month</span>
+          <input type="email" placeholder="Your email address...">
+          <button type="button" class="btn btn-outline-light">SUBSCRIBE</button>
+        </div>
+      </section>
+      <section class="copyright"><span>eMarket c 2024 Demo Store. All Rights Reserved</span></section>
+    </section>
   </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
